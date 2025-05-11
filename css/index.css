@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     color: white;
     background-color: rgb(8, 55, 66);
@@ -54,11 +57,141 @@ header ul li a:hover {
     color: rgb(0, 4, 255);
 }
 main {
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main .presentacion {
+    margin-top: 64px;
+    background-color: rgb(2, 7, 8);
+    color: rgb(12, 211, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+main .presentacion div {
+    font-size: 40px;
+    margin: 0;
     padding: 20px;
+    display: flex;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+main .presentacion div span {
+    font-size: 30px;
+    color: seashell;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 3ch;
+
+    animation: typing 2s steps(3) , blink .5s  infinite  step-end alternate;
+    overflow: hidden;
+}
+@keyframes typing {
+    from{
+        width: 0px;
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+
+}
+main .presentacion .centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -80px;
+}
+main .presentacion h2 {
+    font-size: 60px;
+    color: seashell;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+main .presentacion p {
+    font-size: 24px;
+    margin:  0 340px;
+    position: center;
+    padding: 30px;
+    color: seashell;
+    border: solid 2px rgb(12, 211, 255);
+    border-radius: 10px;
+}
+.presentacion i {
+    font-size: 2rem;
+    color: rgb(12, 211, 255);
+    margin-bottom: 80px;
+}
+main .gustos {
+    color: rgb(179, 232, 245);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gustos h2 {
+    font-size: 60px;
+    color: seashell;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.gustos p {
+    font-size: 24px;
+    margin:  0 340px;
+    position: center;
+    padding: 30px;
+    color: seashell;
+    border: solid 2px rgb(12, 211, 255);
+    border-radius: 10px;
+}
+main .curiosidades {
+    background-color: rgb(2, 7, 8);
+}
+.curiosidades h2 {
+    font-size: 60px;
+    color: seashell;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.curiosidades ul {
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+    color: rgb(12, 211, 255);
+}
+.curiosidades ul li {
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 10px;
+    color: seashell;
+    border: solid 2px rgb(12, 211, 255);
+    border-radius: 10px;
 }
 footer {
-    background-color: rgb(179, 232, 245);
+    background-color: rgb(149, 230, 250);
     color: rgb(8, 55, 66);
     display: flex;
     flex-wrap: wrap;
